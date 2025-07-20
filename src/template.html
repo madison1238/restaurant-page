@@ -8,13 +8,31 @@
   <body>
     <header>
       <nav>
-        <button>Home</button>
-        <button>Menu</button>
-        <button>About</button>
+        <div class="nav-buttons">
+          <button>Home</button>
+          <button>Menu</button>
+        </div>
+        <h1>Yummy <span class="logo-color">Kitchen</span></h1>
+        <div class="nav-buttons">
+          <button>About</button>
+          <button>Reserve</button>
+        </div>
       </nav>
     </header>
-    <div #content>
-      <h1>Restaurant</h1>
+    <div id="content">
+      <div id="text-content">
+        <h3 id="name">Yummy <span class="logo-color">Kitchen</span></h3>
+        <h1 id="tag">Delicious Dishes for Food Lovers</h1>
+        <p id="description">
+          At Yummy Kitchen, we use fresh, sustainable ingredients to create
+          meals that are both healthy and delicious. Every dish is made with
+          care to nourish your body and satisfy your cravings.
+        </p>
+        <button id="menu-btn-home">Explore Menu →</button>
+      </div>
+      <div id="img-content">
+        <img id="homepage-img" src="./images/homepage-food.png" />
+      </div>
     </div>
   </body>
 </html>

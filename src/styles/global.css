@@ -3,11 +3,16 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter";
+  /*border: 2px solid red;*/
+}
+:root {
+  --background: #fff5e4;
+  --accent: #cd5c08;
+  --description: #393e46;
 }
 
 nav {
   display: flex;
-  border: 2px solid red;
   align-items: center;
   justify-content: space-between;
   padding: 25px 50px;
@@ -15,6 +20,8 @@ nav {
 
 nav h1 {
   justify-self: center;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 nav button {
@@ -22,5 +29,71 @@ nav button {
   background: none;
   margin: 0 15px;
   cursor: pointer;
-  font-size: medium;
+  font-size: 20px;
+}
+
+.logo-color {
+  color: var(--accent);
+}
+
+/*HOMEPAGE CSS */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  background-color: var(--background);
+}
+
+#text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 90px;
+  gap: 20px;
+}
+
+#name {
+  font-size: 30px;
+}
+
+#tag {
+  font-size: 50px;
+}
+
+#description {
+  color: var(--description);
+}
+
+#menu-btn-home {
+  border-radius: 20px;
+  border: none;
+  background: var(--accent);
+  padding: 10px 20px;
+  color: var(--background);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#homepage-img {
+  height: 600px;
+  width: auto;
 }
