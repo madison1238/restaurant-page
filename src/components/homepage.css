@@ -5,12 +5,12 @@ body {
   height: 100%;
 }
 
-body {
+body#homepage-body {
   display: flex;
   flex-direction: column;
 }
 
-#content {
+#homepage-body #content {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -18,7 +18,7 @@ body {
   background-color: var(--background);
 }
 
-#text-content {
+#homepage-body #text-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,19 +27,19 @@ body {
   gap: 20px;
 }
 
-#name {
+#homepage-body #name {
   font-size: 30px;
 }
 
-#tag {
+#homepage-body #tag {
   font-size: 50px;
 }
 
-#description {
+#homepage-body #description {
   color: var(--description);
 }
 
-#menu-btn-home {
+#homepage-body #menu-btn-home {
   border-radius: 20px;
   border: none;
   background: var(--accent);
@@ -49,13 +49,13 @@ body {
   cursor: pointer;
 }
 
-#img-content {
+#homepage-body #img-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#homepage-img {
+#homepage-body #homepage-img {
   height: 600px;
   width: auto;
 }

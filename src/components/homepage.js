@@ -2,6 +2,9 @@ import homepageImg from '../images/homepage-food.png';
 import './homepage.css'
 
 export default function loadHome(){
+    const body = document.querySelector('body');
+    body.id = 'homepage-body';
+
     const content = document.querySelector('#content');
 
     const textContainer = document.createElement('div');

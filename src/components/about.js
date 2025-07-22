@@ -5,6 +5,9 @@ import restaurantImgSRC from '../images/restaurant-abt-page.jpg'
 import './about.css';
 
 export default function loadAbout(){
+    const body = document.querySelector('body')
+    body.id = 'about-body'
+
     const content = document.querySelector('#content');
 
     const abtContainer = document.createElement('div');

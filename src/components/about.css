@@ -6,18 +6,18 @@ body {
   width: 100%;
 }
 
-body {
+body#about-body {
   display: flex;
   flex-direction: column;
 }
 
-#content {
+#about-body #content {
   background-color: var(--background);
   height: 100%;
   width: 100%;
 }
 
-#abt-container {
+#about-body #abt-container {
   display: grid;
   width: 100%;
   height: 100%;
@@ -28,18 +28,18 @@ body {
   padding: 75px;
 }
 
-img {
+#about-body img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
 
-#food-img {
+#about-body #food-img {
   grid-row: 1/3;
 }
 
-#abt-text-content {
+#about-body #abt-text-content {
   grid-row: 1/3;
   display: flex;
   flex-direction: column;
@@ -48,22 +48,22 @@ img {
   padding: 70px;
 }
 
-#name {
+#about-body #name {
   font-size: 20px;
 }
 
-#tag {
+#about-body #tag {
   font-size: 40px;
 }
 
-#description {
+#about-body #description {
   color: var(--description);
 }
 
-#list-container {
+#about-body #list-container {
   padding-right: 90px;
 }
-ul {
+#about-body ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -71,7 +71,7 @@ ul {
   list-style-type: none;
 }
 
-li {
+#about-body li {
   background-color: var(--accent);
   color: var(--background);
   border-radius: 20px;
@@ -81,7 +81,7 @@ li {
   font-size: 16px;
   padding: 6px;
 }
-#reserve-table-btn {
+#about-body #reserve-table-btn {
   border: none;
   background: var(--accent2);
   color: var(--background);
@@ -92,7 +92,7 @@ li {
   margin-right: 98px;
 }
 
-#restaurant-img {
+#about-body #restaurant-img {
   grid-column: 3;
   grid-row: 2;
   margin-left: -75px;
