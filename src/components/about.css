@@ -1,43 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Inter";
-  /*border: 2px solid red;*/
-}
-:root {
-  --background: #fff5e4;
-  --accent: #cd5c08;
-  --accent2: #6a9c89;
-  --description: #393e46;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 50px;
-}
-
-nav h1 {
-  justify-self: center;
-  font-weight: 700;
-  font-size: 30px;
-}
-
-nav button {
-  border: none;
-  background: none;
-  margin: 0 15px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.logo-color {
-  color: var(--accent);
-}
-
-/*ABOUT PAGE CSS
+/*ABOUT PAGE CSS*/
 
 html,
 body {
@@ -136,4 +97,3 @@ li {
   grid-row: 2;
   margin-left: -75px;
 }
-*/
