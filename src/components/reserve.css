@@ -1,0 +1,126 @@
+/* RESERVE STYLES */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  height: 100%;
+}
+
+#reserve-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#text-form-container {
+  background-color: var(--background);
+  flex: 3;
+  display: flex;
+  padding: 50px 100px;
+  gap: 50px;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-right: 150px;
+}
+
+#heading {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+#open-hours-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+#hours-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form {
+  background-color: white;
+  border: 1px solid rgb(222, 220, 220);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 25px;
+  gap: 15px;
+  margin-bottom: -150px;
+  z-index: 1;
+}
+
+input,
+select,
+#submit-form {
+  padding: 10px 5px;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#date-time-guest {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#date-time-guest .label-input {
+  min-width: 125px;
+}
+
+#submit-form {
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+#info-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 25px 100px;
+  gap: 8px;
+}
+
+#icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+#info-container img {
+  box-sizing: content-box;
+  height: 30px;
+}
+#info-container img:hover {
+  transform: scale(1.25);
+  transition: transform 0.25s ease-in-out;
+}

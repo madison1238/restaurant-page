@@ -1,8 +1,9 @@
 import '@fontsource/inter';
 import './styles/global.css';
 
-import loadHome from './components/homepage';
-import loadAbout from './components/about.js'
+/*import loadHome from './components/homepage';
+import loadAbout from './components/about.js';*/
+import loadReserve from './components/reserve';
 
 const homeBtn = document.querySelector('#home-btn')
 const menuBtn = document.querySelector('#menu-btn');
@@ -19,10 +20,16 @@ abtBtn.addEventListener('click', () => {
     loadAbout();
 })
 
+reserveBtn.addEventListener('click', () => {
+    clearContent();
+    loadReserve();
+})
+
 
 function clearContent(){
     const content = document.querySelector('#content');
     content.innerHTML = '';
 }
 
-loadHome();
+clearContent()
+loadReserve()
