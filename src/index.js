@@ -2,8 +2,9 @@ import '@fontsource/inter';
 import './styles/global.css';
 
 /*import loadHome from './components/homepage';
-import loadAbout from './components/about.js';*/
-import loadReserve from './components/reserve';
+import loadAbout from './components/about.js';
+import loadReserve from './components/reserve';*/
+import loadMenu from './components/menu';
 
 const homeBtn = document.querySelector('#home-btn')
 const menuBtn = document.querySelector('#menu-btn');
@@ -20,6 +21,11 @@ abtBtn.addEventListener('click', () => {
     loadAbout();
 })
 
+menuBtn.addEventListener('click', () => {
+    clearContent();
+    loadMenu();
+})
+
 reserveBtn.addEventListener('click', () => {
     clearContent();
     loadReserve();
@@ -31,5 +37,3 @@ function clearContent(){
     content.innerHTML = '';
 }
 
-clearContent()
-loadReserve()

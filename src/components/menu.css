@@ -1,0 +1,87 @@
+html,
+body,
+#content,
+#menu-page-container {
+  height: 100%;
+}
+
+#menu-page-container {
+  padding: 30px;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#text-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#text-cont h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#button-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#button-cont button {
+  background: var(--background);
+  padding: 10px 0px;
+  width: 105px;
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px solid rgb(174, 173, 173);
+}
+
+#menu-display-cont {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 25px;
+
+  background-image: radial-gradient(
+    circle at top right,
+    #7a7968 0%,
+    #373732 25%
+  );
+}
+
+#glass {
+  border-radius: 25px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+#menu-items {
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-description {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.item {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.description {
+  font-weight: 100;
+  color: #c8c5c5;
+}
