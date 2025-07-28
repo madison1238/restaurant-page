@@ -32,7 +32,7 @@ reserveBtn.addEventListener('click', () => {
 })
 
 
-function clearContent(){
+export function clearContent(){
     const content = document.querySelector('#content');
     content.innerHTML = '';
 }
