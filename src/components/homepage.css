@@ -33,6 +33,7 @@ body#homepage-body {
 
 #homepage-body #tag {
   font-size: 50px;
+  font-weight: 400;
 }
 
 #homepage-body #description {

@@ -54,6 +54,7 @@ body#about-body {
 
 #about-body #tag {
   font-size: 40px;
+  font-weight: 400;
 }
 
 #about-body #description {
