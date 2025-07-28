@@ -46,6 +46,7 @@ body,
   justify-content: center;
   align-self: center;
   border-radius: 25px;
+  max-width: 1050px;
 
   background-image: radial-gradient(
     circle at top right,
