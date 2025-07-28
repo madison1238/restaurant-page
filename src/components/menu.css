@@ -32,6 +32,12 @@ body,
   gap: 15px;
 }
 
+#button-cont .select {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+}
+
 #button-cont button {
   background: var(--background);
   padding: 10px 0px;

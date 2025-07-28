@@ -14,38 +14,44 @@ export default function loadMenu(){
 
 
 function selectBtn(btn){
- 
+    const buttons = document.querySelectorAll('#button-cont button')
+    for(let button of buttons ){
+        button.classList.remove('select')
+        if (button.id == btn){
+            button.classList.add('select');
+        }
+    }
 }
 
 function loadListeners(){
     const appetizerBtn = document.querySelector('#app-btn');
     appetizerBtn.addEventListener('click', ()=> {
         loadAppetizers();
-        selectBtn()
+        selectBtn('app-btn')
     })
 
     const mainCourseBtn = document.querySelector('#main-btn');
     mainCourseBtn.addEventListener('click', ()=> {
         loadMainCourse();
-        selectBtn()
+        selectBtn('main-btn')
     })
 
     const desertBtn = document.querySelector('#desert-btn');
     desertBtn.addEventListener('click', ()=> {
         loadDeserts();
-        selectBtn();
+        selectBtn('desert-btn');
     })
 
     const drinkBtn = document.querySelector('#drink-btn')
     drinkBtn.addEventListener('click', ()=> {
         loadDrinks();
-        selectBtn();
+        selectBtn('drink-btn');
     })
 
     const specialsBtn = document.querySelector('#specials-btn');
     specialsBtn.addEventListener('click', ()=> {
         loadSpecials();
-        selectBtn();
+        selectBtn('specials-btn');
     })
 
 }
