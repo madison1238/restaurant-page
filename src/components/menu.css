@@ -3,6 +3,7 @@ body,
 #content,
 #menu-page-container {
   height: 100%;
+  overflow: hidden;
 }
 
 #menu-page-container {
