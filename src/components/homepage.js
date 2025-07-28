@@ -1,9 +1,27 @@
 import homepageImg from '../images/homepage-food.png';
+import loadMenu from './menu';
+import { clearContent } from '..';
 import './homepage.css'
 
 export default function loadHome(){
     const body = document.querySelector('body');
     body.id = 'homepage-body';
+
+    loadHTML();
+    loadListeners()
+
+}
+
+function loadListeners(){
+    const menuBtn = document.querySelector('#menu-btn-home')
+    menuBtn.addEventListener('click', ()=> {
+        clearContent();
+        loadMenu();
+    })
+}
+
+function loadHTML(){
+
 
     const content = document.querySelector('#content');
 
@@ -51,4 +69,5 @@ export default function loadHome(){
 
     content.appendChild(textContainer);
     content.appendChild(imageContainer);
+    return content
 }
