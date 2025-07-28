@@ -2,12 +2,32 @@ import foodImgSRC from '../images/food-abt-page.jpg'
 import chefImgSRC from '../images/chef-abt-page.jpg'
 import restaurantImgSRC from '../images/restaurant-abt-page.jpg'
 
+import loadReserve from './reserve';
+import { clearContent } from '..';
+
 import './about.css';
 
 export default function loadAbout(){
     const body = document.querySelector('body')
     body.id = 'about-body'
 
+    loadHTML();
+    loadListeners();
+
+    
+}
+
+function loadListeners(){
+    
+    const reserveBtn = document.querySelector('#reserve-table-btn')
+
+    reserveBtn.addEventListener('click', ()=> {
+        clearContent();
+        loadReserve();
+    })
+}
+
+function loadHTML(){
     const content = document.querySelector('#content');
 
     const abtContainer = document.createElement('div');
@@ -85,4 +105,5 @@ export default function loadAbout(){
     abtContainer.appendChild(restaurantImg);
 
     content.appendChild(abtContainer);
+    return content;
 }
